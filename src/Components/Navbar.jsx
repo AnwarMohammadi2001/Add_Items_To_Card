@@ -11,20 +11,10 @@ const navbarItems = [
     name: "Home",
     path: "/",
   },
-  {
-    id: 2,
-    name: "About",
-    path: "/about",
-  },
-  {
-    id: 3,
-    name: "Contact",
-    path: "/contact",
-  },
 ];
 const Navbar = () => {
   return (
-    <div>
+    <div className="">
       <nav className="flex justify-between items-center pl-10 pr-16">
         <div className="flex items-center">
           <img src={logo} alt="" className="h-24 mr-10" />
@@ -49,14 +39,18 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
-          <button className="flex items-center bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
-            <FaShoppingCart className="mr-2" />
-            Add to Cart
+          <button
+         
+            className="flex items-center justify-center bg-blue-950 text-white py-2 px-6 font-semibold rounded-full hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          >
+            <FaShoppingCart className="" size={18} />
           </button>
-          <button className="flex items-center bg-green-500 text-white py-2 px-4 rounded-full hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400">
-            <FaUser className="mr-2" />
-            Login
-          </button>
+          <Link to="/login">
+            <button className="flex items-center bg-green-500 text-white py-2 px-4 rounded-full hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400">
+              <FaUser className="mr-2" />
+              Login
+            </button>
+          </Link>
         </ul>
       </nav>
     </div>

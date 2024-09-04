@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .primary-btn {
+    @apply bg-[#de2c4d] text-white font-semibold py-2 px-7 rounded-xl shadow-[0px_10px_14px_-7px_#de0029] hover:!scale-110 duration-300;
+  }
+}

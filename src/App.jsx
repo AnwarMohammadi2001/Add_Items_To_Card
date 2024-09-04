@@ -1,7 +1,10 @@
 import Layout from "./Components/Layout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
+import DetialsBrandItems from "./pages/DetialsBrandItems";
+
+import Login from "./pages/Login/Login";
+import Register from "./pages/Login/Register";
 
 function App() {
   return (
@@ -10,8 +13,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/showdetilas" element={<DetialsBrandItems />} />
           </Route>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </BrowserRouter>
     </div>

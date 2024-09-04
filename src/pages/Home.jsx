@@ -1,13 +1,13 @@
 import React from "react";
 
+import BrandsItems from "./BrandsItems";
+import HeroPage from "./HeroPage";
+
 const Home = () => {
   return (
     <div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet est
-        deserunt iure? Facilis ab fuga quo nam fugit, accusamus ipsum a. Vero ad
-        dignissimos placeat sint tempora dolore quos voluptas!
-      </p>
+      <HeroPage />
+      <BrandsItems />
     </div>
   );
 };
